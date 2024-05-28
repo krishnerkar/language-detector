@@ -6,9 +6,6 @@ import java from 'highlight.js/lib/languages/java';
 import cpp from 'highlight.js/lib/languages/cpp';
 import csharp from 'highlight.js/lib/languages/csharp';
 import go from 'highlight.js/lib/languages/go';
-import html from 'highlight.js/lib/languages/html';
-import css from 'highlight.js/lib/languages/css';
-import json from 'highlight.js/lib/languages/json';
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('python', python);
@@ -16,11 +13,8 @@ hljs.registerLanguage('java', java);
 hljs.registerLanguage('cpp', cpp);
 hljs.registerLanguage('csharp', csharp);
 hljs.registerLanguage('go', go);
-hljs.registerLanguage('html', html);
-hljs.registerLanguage('css', css);
-hljs.registerLanguage('json', json);
 
-const languages = ['javascript', 'python', 'java', 'cpp', 'csharp', 'go', 'html', 'css', 'json']; 
+const languages = ['javascript', 'python', 'java', 'cpp', 'csharp', 'go']; 
 
 const useLanguageDetector = () => {
   const detectLanguage = (code: string) => {
